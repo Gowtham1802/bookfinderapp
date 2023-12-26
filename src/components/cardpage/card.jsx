@@ -1,7 +1,6 @@
 import React from "react";
 
 const CardPage = ({ book }) => {
-  console.log(book);
   return (
     <>
       {book.map((item, index) => {
@@ -11,7 +10,6 @@ const CardPage = ({ book }) => {
         thumbnail = !thumbnail
           ? "https://pics.craiyon.com/2023-07-04/7ef326780d064781a329cc1f7dd9a2b3.webp"
           : thumbnail;
-        console.log(item.saleInfo.listPrice);
 
         return (
           <div className="card" key={index}>

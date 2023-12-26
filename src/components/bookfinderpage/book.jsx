@@ -6,6 +6,7 @@ import axios from "axios";
 
 const BookFinder = () => {
   const [search, setSearch] = useState("");
+  console.log(search);
   const [bookData, setData] = useState([]);
   const searchBook = (evt) => {
     if (evt.key === "Enter") {
@@ -36,7 +37,7 @@ const BookFinder = () => {
               placeholder="Enter Your Book Name"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              onKeyPress={searchBook}
+              onKeyDown={searchBook}
             />
             <button className="search-btn">
               {" "}
