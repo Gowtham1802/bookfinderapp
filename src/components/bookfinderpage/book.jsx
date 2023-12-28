@@ -24,7 +24,7 @@ const BookFinder = () => {
     <>
       <div className="header">
         <div className="head-row1">
-          <h1>
+          <h1 className="find">
             {" "}
             A Room Without Books Is Like <br /> A Body Without a Soul{" "}
           </h1>
@@ -44,7 +44,7 @@ const BookFinder = () => {
               <FaSearch />{" "}
             </button>
             <div>
-              <img src="./public/image/bgp.png" alt="" />
+              <img src="./public/image/bgp.png" alt="" className="image-box" />
             </div>
           </div>
         </div>
