@@ -50,6 +50,11 @@ const BookFinder = () => {
         </div>
       </div>
       <div className="container">{<CardPage book={bookData} />}</div>
+      <div>
+        <div className="homepage">
+          <h1>Learning Hub</h1>
+        </div>
+      </div>
     </>
   );
 };

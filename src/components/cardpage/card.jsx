@@ -15,7 +15,7 @@ const CardPage = ({ book }) => {
           ? "https://pics.craiyon.com/2023-07-04/7ef326780d064781a329cc1f7dd9a2b3.webp"
           : thumbnail;
         return (
-          <>
+          <div>
             <div
               className="card"
               key={index}
@@ -40,7 +40,7 @@ const CardPage = ({ book }) => {
             <div>
               <ModalPage show={show} item={bookItem} setShow={setShow} />
             </div>
-          </>
+          </div>
         );
       })}
     </>
