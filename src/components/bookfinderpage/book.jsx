@@ -4,6 +4,8 @@ import { FaSearch } from "react-icons/fa";
 import CardPage from "../cardpage/card";
 import axios from "axios";
 
+import BgLogo from "../../../public/image/bg3.png";
+
 const BookFinder = () => {
   const [search, setSearch] = useState("");
   console.log(search);
@@ -22,7 +24,15 @@ const BookFinder = () => {
   };
   return (
     <>
-      <div className="header">
+      <div
+        className="header"
+        style={{
+          backgroundImage: `url(${BgLogo})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="head-row1">
           <h1 className="find">
             {" "}
@@ -30,7 +40,7 @@ const BookFinder = () => {
           </h1>
         </div>
         <div className="head-row2">
-          <h2> Find Your Books </h2>
+          <h2 className="find1"> Find Your Books </h2>
           <div className="search">
             <input
               type="text"
@@ -51,9 +61,7 @@ const BookFinder = () => {
       </div>
       <div className="container">{<CardPage book={bookData} />}</div>
       <div>
-        <div className="homepage">
-          <h1>Learning Hub</h1>
-        </div>
+        <div className="homepage">{/* <h1>Learning Hub</h1> */}</div>
       </div>
     </>
   );
