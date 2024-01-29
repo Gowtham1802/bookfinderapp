@@ -5,6 +5,7 @@ import CardPage from "../cardpage/card";
 import axios from "axios";
 
 import BgLogo from "../../../public/image/bg3.png";
+import BgImage from "../../../public/image/bgp.png";
 
 const BookFinder = () => {
   const [search, setSearch] = useState("");
@@ -54,7 +55,7 @@ const BookFinder = () => {
               <FaSearch />{" "}
             </button>
             <div>
-              <img src="./public/image/bgp.png" alt="" className="image-box" />
+              <img src={BgImage} alt="" className="image-box" />
             </div>
           </div>
         </div>
