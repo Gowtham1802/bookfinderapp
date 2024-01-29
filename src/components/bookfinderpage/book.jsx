@@ -29,7 +29,7 @@ const BookFinder = () => {
         className="header"
         style={{
           backgroundImage: `url(${BgLogo})`,
-          backgroundSize: "cover",
+          backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
@@ -51,10 +51,9 @@ const BookFinder = () => {
               onKeyDown={searchBook}
             />
             <button className="search-btn">
-              {" "}
-              <FaSearch />{" "}
+              <FaSearch />
             </button>
-            <div>
+            <div className="reading-books">
               <img src={BgImage} alt="" className="image-box" />
             </div>
           </div>
