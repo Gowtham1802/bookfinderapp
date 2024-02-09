@@ -291,7 +291,7 @@ body {
   font-size: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .header {
     width: 100%;
     height: auto;
@@ -376,5 +376,43 @@ body {
   }
 }
 
-/* 
-   */
+@media (max-width: 1500px) {
+  .header {
+    width: 100%;
+    /* height: auto; */
+    color: rgba(245, 192, 16, 0.991);
+    box-shadow: 0 5px 10px #d4b996ff;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .header::before {
+    clip-path: none;
+  }
+
+  .head-row2 h2 {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10rem;
+  }
+
+  .head-row1 h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .head-row2 img {
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 7rem;
+  }
+
+  .search input {
+    width: 60%;
+    margin: 12px auto;
+    margin-left: 10rem;
+  }
+}
